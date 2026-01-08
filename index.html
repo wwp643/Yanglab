@@ -125,7 +125,37 @@
             </div>
         </div>
     </section>
-
+<script>
+// 这是一个自动化脚本：它会自动去你的 GitHub 文件夹里找照片并显示
+async function fetchGallery() {
+    const repo = "your-username/Yanglab"; // 记得把这里换成你的 GitHub 用户名/仓库名
+    const path = "assets/img/activities";
+    const container = document.getElementById('activity-container');
+    
+    try {
+        const response = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`);
+        const files = await response.json();
+        
+        if (files.length > 0) {
+            container.innerHTML = ''; // 清空加载提示
+            files.forEach(file => {
+                if (file.name.match(/\.(jpg|jpeg|png|gif)$/i)) {
+                    container.innerHTML += `
+                        <div class="activity-card bg-white rounded-lg overflow-hidden shadow">
+                            <div class="h-48 overflow-hidden">
+                                <img src="${file.download_url}" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-4 font-bold text-center text-sm">${file.name.split('.')[0]}</div>
+                        </div>`;
+                }
+            });
+        }
+    } catch (e) {
+        console.error("加载照片失败", e);
+    }
+}
+window.onload = fetchGallery;
+</script>
     <footer class="py-10 text-center text-gray-400 text-xs">
         © 2026 杨敏课题组 | 华中科技大学生命科学与技术学院
     </footer>
@@ -133,3 +163,4 @@
 </body>
 
 </html>
+
