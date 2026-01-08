@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img/activities" # 以后上传的图片都会存在这里
+public_folder: "/assets/img/activities"
+
+collections:
+  - name: "activities"
+    label: "组内活动"
+    folder: "content/activities"
+    create: true
+    fields:
+      - { label: "活动标题", name: "title", widget: "string" }
+      - { label: "日期", name: "date", widget: "datetime" }
+      - { label: "上传图片", name: "image", widget: "image" }
+      - { label: "活动描述", name: "body", widget: "markdown" }
+
+  - name: "publications"
+    label: "论文成果"
+    folder: "content/publications"
+    create: true
+    fields:
+      - { label: "论文标题", name: "title", widget: "string" }
+      - { label: "年份", name: "year", widget: "string" }
+      - { label: "期刊/详情", name: "details", widget: "text" }
