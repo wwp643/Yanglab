@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>杨敏课题组 - 华中科技大学生命学院</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .section-title { border-left: 5px solid #991b1b; padding-left: 15px; margin-bottom: 25px; font-weight: bold; font-size: 1.5rem; }
+        .activity-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="text-2xl font-bold text-red-800">杨敏课题组</div>
+                <div class="hidden md:block border-l pl-3 text-xs text-gray-500 uppercase">Microbial Resistance & <br>Synthetic Biology</div>
+            </div>
+            <div class="hidden lg:flex space-x-6 font-medium text-sm">
+                <a href="#home" class="hover:text-red-800">首页</a>
+                <a href="#research" class="hover:text-red-800">研究方向</a>
+                <a href="#projects" class="hover:text-red-800">科研项目</a>
+                <a href="#publications" class="hover:text-red-800">论文成果</a>
+                <a href="#activities" class="hover:text-red-800">组内活动</a>
+                <a href="#tools" class="bg-red-800 text-white px-3 py-1 rounded">科研工具</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="container mx-auto px-6 py-10">
+        <div class="bg-white rounded-xl shadow-sm p-8 flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/4">
+                <img src="https://via.placeholder.com/300x400?text=Yang+Min" alt="杨敏教授" class="rounded-lg shadow-md w-full">
+            </div>
+            <div class="md:w-3/4">
+                <h1 class="text-3xl font-bold text-gray-900">杨敏 <span class="text-xl font-normal text-gray-500 ml-2">副教授 / 硕士生导师</span></h1>
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    理学博士，毕业于华中农业大学微生物学专业。现任职于华中科技大学生命科学与技术学院。
+                    主要从事"病原微生物耐药性调控机制"、"产油酵母代谢调控机制"研究。主持国家自然科学基金、湖北省自然科学基金多项。
+                </p>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <div class="flex items-center"><i class="fas fa-envelope mr-2 text-red-800"></i> ymyangmin@hust.edu.cn</div>
+                    <div class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-red-800"></i> 湖北省武汉市珞瑜路1037号</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="container mx-auto px-6 py-10">
+        <h2 class="section-title">研究方向 / Research</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-red-50 p-6 rounded-lg border-b-4 border-red-800">
+                <h3 class="font-bold text-lg mb-2">1. 耐药性调控机制</h3>
+                <p class="text-sm text-gray-600">从蛋白质相互作用和基因转录调控层面系统鉴定参与调控细菌耐药性产生的新型转录因子和信号通路。</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg border-b-4 border-blue-800">
+                <h3 class="font-bold text-lg mb-2">2. 合成生物学研究</h3>
+                <p class="text-sm text-gray-600">以酵母和芽孢杆菌等做底盘，从代谢网络重构层面出发，生产生物基材料和仿生超材料。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mx-auto px-6 py-10">
+        <h2 class="section-title">科研项目 / Projects</h2>
+        <ul class="space-y-3">
+            <li class="bg-white p-4 shadow-sm rounded flex justify-between items-center">
+                <span>国家自然科学基金面上项目 (32070079) - 主持</span>
+                <span class="text-green-600 text-xs font-bold">在研</span>
+            </li>
+            <li class="bg-white p-4 shadow-sm rounded flex justify-between items-center">
+                <span>国家自然科学基金重点项目 (31730005) - 参与</span>
+                <span class="text-green-600 text-xs font-bold">在研</span>
+            </li>
+            <li class="bg-white p-4 shadow-sm rounded flex justify-between items-center">
+                <span>湖北省自然科学基金面上项目 (2018CFB495) - 主持</span>
+                <span class="text-gray-400 text-xs font-bold">结题</span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="activities" class="container mx-auto px-6 py-10 bg-gray-100 rounded-2xl">
+        <h2 class="section-title">组内活动 / Lab Life</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="activity-card bg-white rounded-lg overflow-hidden shadow">
+                <div class="h-48 overflow-hidden"><img src="https://via.placeholder.com/400x300?text=Conference" class="transition duration-500 w-full h-full object-cover"></div>
+                <div class="p-4 font-bold text-center text-sm">学术研讨会分享</div>
+            </div>
+            <div class="activity-card bg-white rounded-lg overflow-hidden shadow">
+                <div class="h-48 overflow-hidden"><img src="https://via.placeholder.com/400x300?text=Teambuilding" class="transition duration-500 w-full h-full object-cover"></div>
+                <div class="p-4 font-bold text-center text-sm">课题组年度团建</div>
+            </div>
+            <div class="activity-card bg-white rounded-lg overflow-hidden shadow">
+                <div class="h-48 overflow-hidden"><img src="https://via.placeholder.com/400x300?text=Graduation" class="transition duration-500 w-full h-full object-cover"></div>
+                <div class="p-4 font-bold text-center text-sm">毕业生欢送仪式</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools" class="container mx-auto px-6 py-10">
+        <div class="bg-slate-900 rounded-2xl p-8 text-white">
+            <h2 class="text-2xl font-bold mb-6 text-center">科研工具与资源</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-5 rounded-lg">
+                    <h3 class="text-red-400 font-bold mb-3"><i class="fas fa-microscope mr-2"></i>常用工具</h3>
+                    <ul class="text-sm space-y-2 text-slate-300">
+                        <li>• <a href="#" class="hover:text-white">结核分枝杆菌转录因子库</a></li>
+                        <li>• <a href="#" class="hover:text-white">代谢网络计算在线工具</a></li>
+                        <li>• <a href="#" class="hover:text-white">NCBI / UniProt 快捷跳转</a></li>
+                    </ul>
+                </div>
+                <div class="bg-slate-800 p-5 rounded-lg">
+                    <h3 class="text-red-400 font-bold mb-3"><i class="fas fa-file-alt mr-2"></i>专利与文档</h3>
+                    <p class="text-xs text-slate-400">运用蛋白胶凝材料提高微生物胶结砂土机械性能的方法...</p>
+                    <button class="mt-4 bg-red-800 px-4 py-2 rounded text-xs">下载实验室 SOP</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-xs">
+        © 2026 杨敏课题组 | 华中科技大学生命科学与技术学院
+    </footer>
+
+</body>
+</html>
